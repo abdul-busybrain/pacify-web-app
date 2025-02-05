@@ -3,22 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #ae6cb1;
-  --foreground: #ffffff;
-  --primary-light: #c18ec4;
-  --primary-dark: #9a4e9d;
+  --background: 250 250 250; /* bg-gray-50 */
+  --foreground: 55 65 81; /* text-gray-700 */
+  --primary: 147 51 234; /* purple-600 */
+  --primary-light: 237 233 254; /* purple-50 */
+  --primary-dark: 107 33 168; /* purple-800 */
+  --secondary: 16 185 129; /* green-500 */
+  --accent: 249 115 22; /* orange-500 */
+  --muted: 107 114 128; /* gray-500 */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ae6cb1;
-    --foreground: #ffffff;
-    /* You can adjust dark mode colors here if needed */
+    --background: 31 41 55; /* bg-gray-800 */
+    --foreground: 229 231 235; /* text-gray-200 */
+    /* Adjust other colors for dark mode if needed */
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  font-family: "Inter", sans-serif; /* Consider using a web-safe font or adding custom fonts */
 }
